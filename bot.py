@@ -16,7 +16,7 @@ from uniswap import Uniswap
 address = ""          # or None if you're not going to make transactions
 private_key = ""  # or None if you're not going to make transactions
 version = 2                       # specify which version of Uniswap to use
-provider = "https://mainnet.infura.io/v3/9ee37c74339244649fe4c29f9821f2b0"    # can also be set through the environment variable `PROVIDER`
+provider = "https://mainnet.infura.io/v3/0d03a3c1be184734b0c2c27fc9a52a07"    # can also be set through the environment variable `PROVIDER`
 uniswap = Uniswap(address=address, private_key=private_key, version=version, provider=provider)
 
 # Some token addresses we'll be using later in this guide
