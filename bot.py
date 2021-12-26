@@ -36,9 +36,8 @@ bot = commands.Bot(command_prefix='/')
 
 @bot.command(name='price')
 async def testCommand(ctx):
-    channel = bot.get_channel(<Channel ID goes here>)
     woolPrice = uniswap.get_price_input(wool, usdc, 10**18)/1000000
-    await channel.send("WOOL: $" + str(woolPrice))
+    await ctx.send("WOOL: $" + str(woolPrice))
 
 print("Bot is running")
 bot.run(TOKEN)
